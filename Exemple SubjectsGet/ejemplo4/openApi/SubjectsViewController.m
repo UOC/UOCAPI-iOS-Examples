@@ -115,7 +115,7 @@
 /*ENDUOCAPIEXAMPLE*/
 - (void)setDatos:(NSDictionary *)dict
 {
-    for (NSDictionary *classroom in [dict objectForKey:@"classrooms"]) {
+    for (NSDictionary *classroom in [dict objectForKey:@"subjects"]) { // Abans classrooms
         Classroom *c = [[Classroom alloc] init];
         [c setDatos:classroom];
         [self.classrooms addObject:c];

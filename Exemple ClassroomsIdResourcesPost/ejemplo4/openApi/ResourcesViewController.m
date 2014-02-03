@@ -150,7 +150,7 @@
                         
                         if ([data length] >0 && error == nil)
                         {
-                            NSLog(@"%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                            NSLog(@"post response - %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
                             [self cargarRecursos];
                             
                         }
