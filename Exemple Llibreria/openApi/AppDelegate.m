@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  openApi
 //
-//  Created by Oscar Iglesias Lopez on 16/05/13.
+//  Created by UOC on 16/05/13.
 //  Copyright (c) 2013 Universitat Oberta de Catalunya. All rights reserved.
 //
 

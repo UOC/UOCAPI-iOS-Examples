@@ -38,4 +38,25 @@
     self.lastUpdate = [NSDate dateWithTimeIntervalSince1970:(([lastUpNum longLongValue]/ 1000)+7200)];
 }
 
+-(Person *) getPeopleId:(NSString *)iden withToken:(NSString *)token
+{
+    Person *p = [[Person alloc] init];
+    
+    NSURL *personURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@people/%@?access_token=%@", baseUrl , iden, token]];
+    
+    
+    NSData *personData = [NSData dataWithContentsOfURL:personURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:personData encoding:NSUTF8StringEncoding]);
+    NSDictionary *personDict = [NSJSONSerialization JSONObjectWithData:personData options:0 error:nil];
+    
+    if ([personDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [personDict valueForKey:@"error"], [personDict valueForKey:@"error_description"]);
+        return p;
+    }
+    
+    [p setDatos:personDict];
+    
+    return p;
+}
+
 @end

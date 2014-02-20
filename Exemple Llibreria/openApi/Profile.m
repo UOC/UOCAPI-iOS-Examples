@@ -22,4 +22,46 @@
     self.language = [profileDictionary objectForKey:@"language"];
 }
 
+-(Profile *) getPeopleIdProfilesCurrent:(NSString *)iden withToken:(NSString *)token
+{
+    Profile *p = [[Profile alloc] init];
+    
+    NSURL *profileURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@people/%@/profiles/current?access_token=%@", baseUrl , iden, token]];
+    
+    
+    NSData *profileData = [NSData dataWithContentsOfURL:profileURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:profileData encoding:NSUTF8StringEncoding]);
+    NSDictionary *profileDict = [NSJSONSerialization JSONObjectWithData:profileData options:0 error:nil];
+    
+    if ([profileDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [profileDict valueForKey:@"error"], [profileDict valueForKey:@"error_description"]);
+        return p;
+    }
+    
+    [p setDatos:profileDict];
+    
+    return p;
+}
+
+-(Profile *) getUserProfilesCurrent:(NSString *)token
+{
+    Profile *p = [[Profile alloc] init];
+    
+    NSURL *profileURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@user/profiles/current?access_token=%@", baseUrl, token]];
+    
+    
+    NSData *profileData = [NSData dataWithContentsOfURL:profileURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:profileData encoding:NSUTF8StringEncoding]);
+    NSDictionary *profileDict = [NSJSONSerialization JSONObjectWithData:profileData options:0 error:nil];
+    
+    if ([profileDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [profileDict valueForKey:@"error"], [profileDict valueForKey:@"error_description"]);
+        return p;
+    }
+    
+    [p setDatos:profileDict];
+    
+    return p;
+}
+
 @end

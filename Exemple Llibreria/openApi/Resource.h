@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Resource : NSObject
 
@@ -19,4 +20,7 @@
 
 -(void) setDatos:(NSDictionary *) resourceDictionary;
 
+-(Resource *) getClassroomsIdResourcesId:(NSString *)idenC ResourceId:(NSString *)idenR withToken:(NSString *)token;
+
+-(Resource *) getSubjectsIdResourcesId:(NSString *)idenS ResourceId:(NSString *)idenR withToken:(NSString *)token;
 @end

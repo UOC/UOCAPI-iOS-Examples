@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Profile : NSObject
 
@@ -20,6 +21,11 @@
 @property (nonatomic, retain) NSString *language; //Language of the profile. Some environments have only one language o don't have the current language of the user. This field contains the language of the profile.
 
 -(void) setDatos:(NSDictionary *) profileDictionary;
+
+-(Profile *) getPeopleIdProfilesCurrent:(NSString *)iden withToken:(NSString *)token;
+
+-(Profile *) getUserProfilesCurrent:(NSString *)token;
+
 
 
 @end

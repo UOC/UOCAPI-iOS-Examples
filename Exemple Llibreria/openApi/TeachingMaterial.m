@@ -18,4 +18,25 @@
     self.url = [materialDictionary objectForKey:@"url"];
 }
 
+-(TeachingMaterial *) getClassroomsIdMaterialsId:(NSString *)idenC MaterialId:(NSString *)idenM withToken:(NSString *)token
+{
+    TeachingMaterial *m = [[TeachingMaterial alloc] init];
+    
+    NSURL *materialURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/materials/%@?access_token=%@", baseUrl , idenC, idenM, token]];
+    
+    
+    NSData *materialData = [NSData dataWithContentsOfURL:materialURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:materialData encoding:NSUTF8StringEncoding]);
+    NSDictionary *materialDict = [NSJSONSerialization JSONObjectWithData:materialData options:0 error:nil];
+    
+    if ([materialDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [materialDict valueForKey:@"error"], [materialDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:materialDict];
+    
+    return m;
+}
+
 @end

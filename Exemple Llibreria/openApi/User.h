@@ -2,11 +2,12 @@
 //  User.h
 //  Llibreria
 //
-//  Created by Oscar Iglesias Lopez on 17/05/13.
+//  Created by UOC on 17/05/13.
 //  Copyright (c) 2013 Universitat Oberta de Catalunya. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface User : NSObject
 
@@ -21,5 +22,5 @@
 @property (nonatomic, retain) UIImage *photo;
 
 - (void) setDatos:(NSDictionary *)userDictionary;
-
+-(User *) getUser:(NSString *) token;
 @end

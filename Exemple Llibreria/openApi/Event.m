@@ -31,4 +31,25 @@
     return dateFromString;
 }
 
+- (Event *) getCalendarEventsId:(NSString *)iden withToken:(NSString *)token{
+    
+    Event *e = [[Event alloc] init];
+    
+    NSURL *eventURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@calendar/events/%@?access_token=%@", baseUrl , iden, token]];
+    
+    
+    NSData *eventData = [NSData dataWithContentsOfURL:eventURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:eventData encoding:NSUTF8StringEncoding]);
+    NSDictionary *eventDict = [NSJSONSerialization JSONObjectWithData:eventData options:0 error:nil];
+        
+    if ([eventDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [eventDict valueForKey:@"error"], [eventDict valueForKey:@"error_description"]);
+        return e;
+    }
+        
+    [e setDatos:eventDict];
+   
+    return e;
+}
+
 @end

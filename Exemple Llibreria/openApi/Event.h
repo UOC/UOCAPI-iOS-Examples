@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Event : NSObject
 
@@ -17,5 +18,7 @@
 @property (nonatomic, retain) NSDate *end; //End date.
 
 - (void) setDatos:(NSDictionary *)eventDictionary;
+
+- (Event *) getCalendarEventsId:(NSString *)iden withToken:(NSString *)token;
 
 @end

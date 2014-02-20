@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MessageHistoryDetail.h"
+#import "Constants.h"
 
 @interface MessageHistory : NSObject
 
@@ -15,5 +16,12 @@
 @property (nonatomic, retain) NSMutableArray *details; // Action list.
 
 -(void) setDatos:(NSDictionary *)historyDictionary;
+
+-(MessageHistory *) getClassroomsIdBoardsIdFoldersIdMessagesIdHistory:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token;
+
+-(MessageHistory *) getMailMessagesIdHistory:(NSString *)idenM withToken:(NSString *)token;
+
+-(MessageHistory *) getSubjectsIdBoardsIdFoldersIdMessagesIdHistory:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token;
+
 
 @end

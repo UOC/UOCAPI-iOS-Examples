@@ -20,4 +20,47 @@
     self.unreadMessages = [boardDictionary objectForKey:@"unreadMessages"];
     self.totalMessages = [boardDictionary objectForKey:@"totalMessages"];
 }
+
+- (Board *) getClassroomsIdBoardsId:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token
+{
+    Board *b = [[Board alloc] init];
+    
+    NSURL *boardURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/boards/%@?access_token=%@", baseUrl , idenC, idenB, token]];
+    
+    
+    NSData *boardData = [NSData dataWithContentsOfURL:boardURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:boardData encoding:NSUTF8StringEncoding]);
+    NSDictionary *boardDict = [NSJSONSerialization JSONObjectWithData:boardData options:0 error:nil];
+    
+    if ([boardDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [boardDict valueForKey:@"error"], [boardDict valueForKey:@"error_description"]);
+        return b;
+    }
+    
+    [b setDatos:boardDict];
+    
+    return b;
+}
+
+- (Board *) getSubjectsIdBoardsId:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token
+{
+    Board *b = [[Board alloc] init];
+    
+    NSURL *boardURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@subjects/%@/boards/%@?access_token=%@", baseUrl , idenS, idenB, token]];
+    
+    
+    NSData *boardData = [NSData dataWithContentsOfURL:boardURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:boardData encoding:NSUTF8StringEncoding]);
+    NSDictionary *boardDict = [NSJSONSerialization JSONObjectWithData:boardData options:0 error:nil];
+    
+    if ([boardDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [boardDict valueForKey:@"error"], [boardDict valueForKey:@"error_description"]);
+        return b;
+    }
+    
+    [b setDatos:boardDict];
+    
+    return b;
+}
+
 @end

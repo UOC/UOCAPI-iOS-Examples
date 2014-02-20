@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Folder : NSObject
 
@@ -16,5 +17,18 @@
 @property (nonatomic, retain) NSNumber *totalMessages; // Number of messages.
 
 -(void) setDatos:(NSDictionary *)folderDictionary;
+
+- (Folder *) getClassroomsIdBoardsIdFoldersInbox:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token;
+
+
+- (Folder *) getClassroomsIdBoardsIdFoldersId:(NSString *)idenC BoardId:(NSString *)idenB  FolderId:(NSString *)idenF withToken:(NSString *)token;
+
+- (Folder *) getMailFoldersInbox:(NSString *)token;
+
+- (Folder *) getMailFoldersId:(NSString *)iden withToken:(NSString *)token;
+
+- (Folder *) getSubjectsIdBoardsIdFoldersInbox:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token;
+
+- (Folder *) getSubjectsIdBoardsIdFoldersId:(NSString *)idenS BoardId:(NSString *)idenB  FolderId:(NSString *)idenF withToken:(NSString *)token;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Board : NSObject
 
@@ -20,4 +21,7 @@
 
 - (void) setDatos:(NSDictionary *)boardDictionary;
 
+- (Board *) getClassroomsIdBoardsId:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token;
+
+- (Board *) getSubjectsIdBoardsId:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token;
 @end

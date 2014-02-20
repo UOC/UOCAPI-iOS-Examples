@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface TeachingMaterial : NSObject
 
@@ -16,5 +17,7 @@
 @property (nonatomic, retain) NSString *url; //Material's URL.
 
 -(void) setDatos:(NSDictionary *) materialDictionary;
+
+-(TeachingMaterial *) getClassroomsIdMaterialsId:(NSString *)idenC MaterialId:(NSString *)idenM withToken:(NSString *)token;
 
 @end

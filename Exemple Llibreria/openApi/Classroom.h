@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Classroom : NSObject
 
@@ -19,6 +20,8 @@
 @property (nonatomic, retain) NSString *shortTitle; //Classroom's short title.
 
 - (void) setDatos:(NSDictionary *)classroomDictionary;
+
+- (Classroom *) getClassroomsId:(NSString *)iden withToken:(NSString *)token;
 
 
 @end

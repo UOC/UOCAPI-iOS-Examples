@@ -2,7 +2,7 @@
 //  ViewController.m
 //  openApi
 //
-//  Created by Oscar Iglesias Lopez on 16/05/13.
+//  Created by UOC on 16/05/13.
 //  Copyright (c) 2013 Universitat Oberta de Catalunya. All rights reserved.
 //
 
@@ -28,7 +28,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     if (self.loadedAuth == 1) {
-        MessagesViewController *userViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserView"];
+        UserViewController *userViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserView"];
         userViewController.auth = self.auth;
         [self.navigationController pushViewController:userViewController animated:YES];
         self.loadedAuth = 0;

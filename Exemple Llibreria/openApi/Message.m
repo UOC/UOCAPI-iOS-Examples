@@ -24,4 +24,111 @@
     self.body = [messageDictionary objectForKey:@"body"];
 }
 
+
+
+-(Message *) getClassroomIdBoardsIdMessagesId:(NSString *)idenC BoardId:(NSString *)idenB MessageId:(NSString *)idenM withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/boards/%@/messages/%@?access_token=%@", baseUrl , idenC, idenB, idenM, token]];
+    
+    
+    NSData *messageData = [NSData dataWithContentsOfURL:messageURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding]);
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:messageData options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
+-(Message *) getClassroomIdBoardsIdFoldersIdMessagesId:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/boards/%@/folders/%@/messages/%@?access_token=%@", baseUrl , idenC, idenB, idenF, idenM, token]];
+    
+    
+    NSData *messageData = [NSData dataWithContentsOfURL:messageURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding]);
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:messageData options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
+-(Message *) getMailMessagesId:(NSString *)idenM withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@mail/messages/%@?access_token=%@", baseUrl , idenM, token]];
+    
+    
+    NSData *messageData = [NSData dataWithContentsOfURL:messageURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding]);
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:messageData options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
+-(Message *) getSubjectsIdBoardsIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB MessageId:(NSString *)idenM withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@subjects/%@/boards/%@/messages/%@?access_token=%@", baseUrl , idenS, idenB, idenM, token]];
+    
+    
+    NSData *messageData = [NSData dataWithContentsOfURL:messageURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding]);
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:messageData options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
+-(Message *) getSubjectsIdBoardsIdFoldersIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@subjects/%@/boards/%@/folders/%@/messages/%@?access_token=%@", baseUrl , idenS, idenB, idenF, idenM, token]];
+    
+    
+    NSData *messageData = [NSData dataWithContentsOfURL:messageURL];
+    NSLog(@"Data - %@", [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding]);
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:messageData options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
 @end
