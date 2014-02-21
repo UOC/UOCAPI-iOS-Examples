@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="1144" y="-107"/>
         </scene>
-        <!--Messages View Controller-->
+        <!--Messages View Controller - messages-->
         <scene sceneID="SVn-Y1-IU5">
             <objects>
                 <tableViewController storyboardIdentifier="UserView2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FH6-27-iTB" customClass="MessagesViewController" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
                             <outlet property="delegate" destination="FH6-27-iTB" id="kdD-h5-MKD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wyV-XE-YgJ"/>
+                    <navigationItem key="navigationItem" title="messages" id="wyV-XE-YgJ"/>
                     <connections>
                         <segue destination="QcY-At-iXB" kind="push" id="GMb-uV-2Yq"/>
                     </connections>

@@ -33,17 +33,16 @@
 - (void)cargarUsuario
 {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    /* UOCAPICALL /api/v1/user GET*/
 
+    // Exemple utilitzant la llibreria
     dispatch_queue_t backgroundQueue = dispatch_queue_create("edu.uoc.Llibreria", DISPATCH_QUEUE_SERIAL);
     dispatch_async(backgroundQueue, ^{
         self.user = [[User alloc] getUser:self.auth.accessToken];
-        //while (self.user.username == nil) {
-            
-        //}
+        
         NSLog(@"User: %@", self.user.username);
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            // Actualizamos la vista
             [self mostrarDatosUsuario];
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 

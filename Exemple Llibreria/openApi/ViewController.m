@@ -28,7 +28,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     if (self.loadedAuth == 1) {
-        UserViewController *userViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserView"];
+        MessagesViewController *userViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserView2"];
         userViewController.auth = self.auth;
         [self.navigationController pushViewController:userViewController animated:YES];
         self.loadedAuth = 0;

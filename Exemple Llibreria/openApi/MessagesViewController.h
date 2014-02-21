@@ -10,6 +10,7 @@
 #import "GTMOAuth2Authentication.h"
 #import "HistoryViewController.h"
 #import "Message.h"
+#import "MessageList.h"
 
 
 @interface MessagesViewController : UITableViewController

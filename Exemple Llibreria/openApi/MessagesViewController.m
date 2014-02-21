@@ -81,26 +81,17 @@
     messageViewController.auth = self.auth;
     [self.navigationController pushViewController:messageViewController animated:YES];
 }
+
 /*STARTUOCAPIEXAMPLE*/
 - (void)cargarMessages
 {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     /* UOCAPICALL /api/v1/mail/messages GET*/
-    NSURL *messagesURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://oslo.uoc.es:8080/webapps/uocapi/api/v1/mail/messages?access_token=%@", self.auth.accessToken]];
     
     dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-    
+    // Exemple utilitzant la llibreria
     dispatch_async(backgroundQueue, ^{
-        NSData *messagesData = [NSData dataWithContentsOfURL:messagesURL];
-        NSLog(@"Data - %@", [[NSString alloc] initWithData:messagesData encoding:NSUTF8StringEncoding]);
-        NSDictionary *messagesDict = [NSJSONSerialization JSONObjectWithData:messagesData options:0 error:nil];
-        
-        if ([messagesDict valueForKey:@"error"]) {
-            NSLog(@"%@: %@", [messagesDict valueForKey:@"error"], [messagesDict valueForKey:@"error_description"]);
-            return;
-        }
-        
-        [self setDatos:messagesDict];
+        self.messages = [[MessageList alloc] getMailMessages:self.auth.accessToken];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
@@ -109,6 +100,7 @@
     });
 }
 /*ENDUOCAPIEXAMPLE*/
+
 - (void)setDatos:(NSDictionary *)dict
 {
     for (NSDictionary *fold in [dict objectForKey:@"messages"]) {
