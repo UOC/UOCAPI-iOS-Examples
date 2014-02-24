@@ -10,6 +10,9 @@
 #import "UserViewController.h"
 #import "Constants.h"
 #import "MessagesViewController.h"
+#import "EventsViewController.h"
+#import "ExemplesViewController.h"
+
 
 @interface ViewController ()
 
@@ -28,9 +31,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     if (self.loadedAuth == 1) {
-        MessagesViewController *userViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserView2"];
-        userViewController.auth = self.auth;
-        [self.navigationController pushViewController:userViewController animated:YES];
+        ExemplesViewController *exViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ExemplesView"];
+        exViewController.auth = self.auth;
+        [self.navigationController pushViewController:exViewController animated:YES];
         self.loadedAuth = 0;
     } else {
         [self signOut];

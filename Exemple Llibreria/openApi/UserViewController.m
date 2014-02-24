@@ -36,7 +36,7 @@
     /* UOCAPICALL /api/v1/user GET*/
 
     // Exemple utilitzant la llibreria
-    dispatch_queue_t backgroundQueue = dispatch_queue_create("edu.uoc.Llibreria", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
     dispatch_async(backgroundQueue, ^{
         self.user = [[User alloc] getUser:self.auth.accessToken];
         

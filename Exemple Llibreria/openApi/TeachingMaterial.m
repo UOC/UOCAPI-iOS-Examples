@@ -39,4 +39,38 @@
     return m;
 }
 
+
+-(TeachingMaterial *) postClassroomsIdMaterials:(NSString *)idenC material:(TeachingMaterial *)postMaterial withToken:(NSString *)token
+{
+    TeachingMaterial *m = [[TeachingMaterial alloc] init];
+    
+    NSDictionary *nouMaterial = @{@"id":postMaterial.identifier,@"type":postMaterial.type,@"title":postMaterial.title,@"url":postMaterial.url};
+   
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nouMaterial options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *materialsURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/materials?access_token=%@", baseUrl, idenC, token]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:materialsURL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:jsonData];
+    
+    
+    //Fem el request de manera syncrona.
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    NSDictionary *materialDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    if ([materialDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [materialDict valueForKey:@"error"], [materialDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    // Afegim els valors que ens ha tornat en un material que retornem.
+    [m setDatos:materialDict];
+    
+    return m;
+}
 @end

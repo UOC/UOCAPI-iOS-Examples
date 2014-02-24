@@ -23,4 +23,6 @@
 -(Resource *) getClassroomsIdResourcesId:(NSString *)idenC ResourceId:(NSString *)idenR withToken:(NSString *)token;
 
 -(Resource *) getSubjectsIdResourcesId:(NSString *)idenS ResourceId:(NSString *)idenR withToken:(NSString *)token;
+
+-(Resource *) postClassroomsIdResources:(NSString *)idenC resource:(Resource *)postResource withToken:(NSString *)token;
 @end

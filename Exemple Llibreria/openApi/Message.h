@@ -33,4 +33,10 @@
 -(Message *) getSubjectsIdBoardsIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB MessageId:(NSString *)idenM withToken:(NSString *)token;
 
 -(Message *) getSubjectsIdBoardsIdFoldersIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token;
+
+-(Message *) postClassroomsIdBoardsIdMessages:(NSString *)idenC BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token;
+
+-(Message *) postMailMessages:(Message *)postMessage withToken:(NSString *)token;
+
+-(Message *) postSubjectsIdBoardsIdMessages:(NSString *)idenS BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token;
 @end

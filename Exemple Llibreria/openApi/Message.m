@@ -131,4 +131,107 @@
     return m;
 }
 
+-(Message *) postClassroomsIdBoardsIdMessages:(NSString *)idenC BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSDictionary *nouMessage = @{@"id":postMessage.identifier, @"subject":postMessage.subject, @"snippet":postMessage.snippet, @"date":postMessage.date, @"color":postMessage.color, @"status":postMessage.status, @"from":postMessage.from, @"to":postMessage.to, @"cc":postMessage.cc, @"body":postMessage.body};
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nouMessage options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/boards/%@/messages?access_token=%@", baseUrl, idenC, idenB, token]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:messageURL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:jsonData];
+    
+    
+    //Fem el request de manera syncrona.
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    // Afegim els valors que ens ha tornat en un missatge que retornem.
+    [m setDatos:messageDict];
+    
+    return m;
+    
+}
+
+-(Message *) postMailMessages:(Message *)postMessage withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSDictionary *nouMessage = @{@"id":postMessage.identifier, @"subject":postMessage.subject, @"snippet":postMessage.snippet, @"date":postMessage.date, @"color":postMessage.color, @"status":postMessage.status, @"from":postMessage.from, @"to":postMessage.to, @"cc":postMessage.cc, @"body":postMessage.body};
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nouMessage options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@mail/messages?access_token=%@", baseUrl, token]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:messageURL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:jsonData];
+    
+    
+    //Fem el request de manera syncrona.
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    // Afegim els valors que ens ha tornat en un missatge que retornem.
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
+-(Message *) postSubjectsIdBoardsIdMessages:(NSString *)idenS BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token
+{
+    Message *m = [[Message alloc] init];
+    
+    NSDictionary *nouMessage = @{@"id":postMessage.identifier, @"subject":postMessage.subject, @"snippet":postMessage.snippet, @"date":postMessage.date, @"color":postMessage.color, @"status":postMessage.status, @"from":postMessage.from, @"to":postMessage.to, @"cc":postMessage.cc, @"body":postMessage.body};
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nouMessage options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *messageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@subjects/%@/boards/%@/messages?access_token=%@", baseUrl, idenS, idenB, token]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:messageURL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:jsonData];
+    
+    
+    //Fem el request de manera syncrona.
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    NSDictionary *messageDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    if ([messageDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [messageDict valueForKey:@"error"], [messageDict valueForKey:@"error_description"]);
+        return m;
+    }
+    
+    // Afegim els valors que ens ha tornat en un missatge que retornem.
+    [m setDatos:messageDict];
+    
+    return m;
+}
+
 @end

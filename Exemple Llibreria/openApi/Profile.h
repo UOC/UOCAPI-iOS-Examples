@@ -26,6 +26,7 @@
 
 -(Profile *) getUserProfilesCurrent:(NSString *)token;
 
+-(Profile *) putUserProfilesCurrent:(Profile *)putProfile withToken:(NSString *)token;
 
 
 @end

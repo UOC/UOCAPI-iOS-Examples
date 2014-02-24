@@ -59,6 +59,8 @@
 		DD77DDB218B76471004732B7 /* SubjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB118B76471004732B7 /* SubjectList.m */; };
 		DD77DDB518B7656F004732B7 /* TeachingMaterialList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB418B7656F004732B7 /* TeachingMaterialList.m */; };
 		DD77DDB818B76701004732B7 /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB718B76701004732B7 /* UserList.m */; };
+		DD77DDBB18B77723004732B7 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDBA18B77723004732B7 /* EventsViewController.m */; };
+		DDF40A8018BB3AA300985BC2 /* ExemplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF40A7F18BB3AA300985BC2 /* ExemplesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +157,10 @@
 		DD77DDB418B7656F004732B7 /* TeachingMaterialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachingMaterialList.m; sourceTree = "<group>"; };
 		DD77DDB618B76701004732B7 /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
 		DD77DDB718B76701004732B7 /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
+		DD77DDB918B77723004732B7 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		DD77DDBA18B77723004732B7 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		DDF40A7E18BB3AA300985BC2 /* ExemplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExemplesViewController.h; sourceTree = "<group>"; };
+		DDF40A7F18BB3AA300985BC2 /* ExemplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExemplesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,10 @@
 				DD1C33CD17DDCDF800B4554E /* MessagesViewController.m */,
 				DD1C33CF17DDCE0800B4554E /* HistoryViewController.h */,
 				DD1C33D017DDCE0800B4554E /* HistoryViewController.m */,
+				DD77DDB918B77723004732B7 /* EventsViewController.h */,
+				DD77DDBA18B77723004732B7 /* EventsViewController.m */,
+				DDF40A7E18BB3AA300985BC2 /* ExemplesViewController.h */,
+				DDF40A7F18BB3AA300985BC2 /* ExemplesViewController.m */,
 				AEE0EB6F1755F78600B1C138 /* Constants.h */,
 				DD1C33A217DDB1DB00B4554E /* Board.h */,
 				DD1C33A317DDB1DB00B4554E /* Board.m */,
@@ -394,6 +404,7 @@
 				AE67935A1744C967001C8959 /* GTMOAuth2Authentication.m in Sources */,
 				AE67935B1744C967001C8959 /* GTMOAuth2SignIn.m in Sources */,
 				AE67935C1744C967001C8959 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				DD77DDBB18B77723004732B7 /* EventsViewController.m in Sources */,
 				DD77DD9D18B74EF2004732B7 /* MessageList.m in Sources */,
 				AE6793351744C7F8001C8959 /* main.m in Sources */,
 				AE6793391744C7F8001C8959 /* AppDelegate.m in Sources */,
@@ -426,6 +437,7 @@
 				DD77DDA918B75F0C004732B7 /* ProfileList.m in Sources */,
 				DD1C33C817DDB95700B4554E /* SettingValue.m in Sources */,
 				DD1C33CB17DDB96A00B4554E /* TeachingMaterial.m in Sources */,
+				DDF40A8018BB3AA300985BC2 /* ExemplesViewController.m in Sources */,
 				DD1C33CE17DDCDF800B4554E /* MessagesViewController.m in Sources */,
 				DD1C33D117DDCE0900B4554E /* HistoryViewController.m in Sources */,
 			);

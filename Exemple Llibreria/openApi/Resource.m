@@ -62,4 +62,39 @@
     return r;
 }
 
+
+-(Resource *) postClassroomsIdResources:(NSString *)idenC resource:(Resource *)postResource withToken:(NSString *)token
+{
+    Resource *r = [[Resource alloc] init];
+    
+    NSDictionary *nouResource = @{@"id":postResource.identifier, @"type":postResource.type, @"subtype":postResource.subtype, @"title":postResource.title, @"code":postResource.code, @"domainId":postResource.domainId};
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:nouResource options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *resourcesURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@classrooms/%@/resources?access_token=%@", baseUrl, idenC, token]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:resourcesURL];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:jsonData];
+    
+    
+    //Fem el request de manera syncrona.
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    NSDictionary *resouceDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    if ([resouceDict valueForKey:@"error"]) {
+        NSLog(@"%@: %@", [resouceDict valueForKey:@"error"], [resouceDict valueForKey:@"error_description"]);
+        return r;
+    }
+    
+    // Afegim els valors que ens ha tornat en un material que retornem.
+    [r setDatos:resouceDict];
+    
+    return r;
+}
+
 @end

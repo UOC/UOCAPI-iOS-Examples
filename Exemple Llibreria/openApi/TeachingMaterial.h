@@ -20,4 +20,6 @@
 
 -(TeachingMaterial *) getClassroomsIdMaterialsId:(NSString *)idenC MaterialId:(NSString *)idenM withToken:(NSString *)token;
 
+-(TeachingMaterial *) postClassroomsIdMaterials:(NSString *)idenC material:(TeachingMaterial *)postMaterial withToken:(NSString *)token;
+
 @end

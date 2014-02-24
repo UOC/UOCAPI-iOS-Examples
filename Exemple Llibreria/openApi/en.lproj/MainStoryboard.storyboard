@@ -34,8 +34,7 @@
                     <navigationItem key="navigationItem" title="Acceso APP" id="XO3-Ff-gRF"/>
                     <connections>
                         <outlet property="labelError" destination="LxN-Ui-vry" id="z2w-fu-M7T"/>
-                        <segue destination="FH6-27-iTB" kind="push" id="pl3-uk-OxH"/>
-                        <segue destination="utN-6a-C2C" kind="push" id="rTD-w3-8La"/>
+                        <segue destination="y7V-zc-hg2" kind="push" id="G0y-ur-mHY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -121,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w06-bb-Wl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="-107"/>
+            <point key="canvasLocation" x="1760" y="-135"/>
         </scene>
         <!--Messages View Controller - messages-->
         <scene sceneID="SVn-Y1-IU5">
             <objects>
-                <tableViewController storyboardIdentifier="UserView2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FH6-27-iTB" customClass="MessagesViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MessagesView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FH6-27-iTB" customClass="MessagesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="RhA-qT-lms">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,9 +152,104 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNf-PI-iHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="477"/>
+            <point key="canvasLocation" x="1760" y="468"/>
         </scene>
-        <!--History View Controller-->
+        <!--Exemples View Controller - Exemples Llibreria-->
+        <scene sceneID="dAM-IZ-95M">
+            <objects>
+                <viewController storyboardIdentifier="ExemplesView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y7V-zc-hg2" customClass="ExemplesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gla-pF-Spe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="72R-3M-isD">
+                                <rect key="frame" x="20" y="168" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="get User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUser" destination="y7V-zc-hg2" eventType="touchUpInside" id="bRL-CL-dxh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tIT-7I-S63">
+                                <rect key="frame" x="20" y="225" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="get MailMessages">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getMailMessages" destination="y7V-zc-hg2" eventType="touchUpInside" id="bSJ-DY-upL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dlv-bv-9ca">
+                                <rect key="frame" x="20" y="284" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="post CalendarEvents">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postCalendarEvents" destination="y7V-zc-hg2" eventType="touchUpInside" id="OM9-eK-Q06"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exemples Llibreria" id="Rc9-ng-GZy"/>
+                    <connections>
+                        <segue destination="FH6-27-iTB" kind="push" id="Paq-fq-CVm"/>
+                        <segue destination="CyB-Gh-O73" kind="push" id="h7x-Sl-PSc"/>
+                        <segue destination="utN-6a-C2C" kind="push" id="nuL-hO-Yun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVT-uX-DMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="468"/>
+        </scene>
+        <!--Events View Controller - Events-->
+        <scene sceneID="PZt-9L-aqh">
+            <objects>
+                <tableViewController storyboardIdentifier="EventsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CyB-Gh-O73" customClass="EventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="VOl-I5-XNN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="v0I-Zt-5tr">
+                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v0I-Zt-5tr" id="Xub-jB-VzX">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CyB-Gh-O73" id="uq1-2m-ehX"/>
+                            <outlet property="delegate" destination="CyB-Gh-O73" id="V7p-xr-Tym"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Events" id="4s8-Oa-And">
+                        <barButtonItem key="rightBarButtonItem" id="TpF-9d-N4v">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="4sR-3a-PMs">
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crearEvent" destination="CyB-Gh-O73" eventType="touchUpInside" id="jK7-aa-vie"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VP9-zN-PtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="1126"/>
+        </scene>
+        <!--History View Controller - history-->
         <scene sceneID="QTn-u1-iAC">
             <objects>
                 <tableViewController storyboardIdentifier="historyView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcY-At-iXB" customClass="HistoryViewController" sceneMemberID="viewController">
@@ -178,11 +272,11 @@
                             <outlet property="delegate" destination="QcY-At-iXB" id="quo-0k-voL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Wb1-Sa-AdS"/>
+                    <navigationItem key="navigationItem" title="history" id="Wb1-Sa-AdS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oF-di-eMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="477"/>
+            <point key="canvasLocation" x="2218" y="468"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bGb-ZS-ZDn">

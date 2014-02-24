@@ -31,4 +31,18 @@
 
 - (Folder *) getSubjectsIdBoardsIdFoldersId:(NSString *)idenS BoardId:(NSString *)idenB  FolderId:(NSString *)idenF withToken:(NSString *)token;
 
+- (Folder *) postClassroomsIdBoardsIdMessagesIdMoveId:(NSString *)idenC BoardId:(NSString *)idenB MessageId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
+- (Folder *) postClassroomsIdBoardsIdFoldersIdMessagesIdMoveId:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
+- (Folder *) postMailFolders:(Folder *)postFolder withToken:(NSString *)token;
+
+- (Folder *) postMailMessagesIdMoveId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
+- (Folder *) postMailFoldersIdMessagesIdMoveId:(NSString *)idenF MessageId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
+- (Folder *) postSubjectsIdBoardsIdMessagesIdMoveId:(NSString *)idenS BoardId:(NSString *)idenB MessageId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
+- (Folder *) postSubjectsIdBoardsIdFoldersIdMessagesIdMoveId:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM Destination:(NSString *)idenDest withToken:(NSString *)token;
+
 @end

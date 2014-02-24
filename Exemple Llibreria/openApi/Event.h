@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Constants.h"
 
 @interface Event : NSObject
@@ -20,5 +21,7 @@
 - (void) setDatos:(NSDictionary *)eventDictionary;
 
 - (Event *) getCalendarEventsId:(NSString *)iden withToken:(NSString *)token;
+
+- (Event *) postCalendarEvents:(Event *)postEvent withToken:(NSString *)token;
 
 @end
