@@ -19,6 +19,14 @@
     }
 }
 
+
+/**
+ * Search users.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with the users that match the search criteria.
+ */
 - (NSMutableArray *) getPeople:(NSString *)token
 {
     self.people = [[NSMutableArray alloc] init];

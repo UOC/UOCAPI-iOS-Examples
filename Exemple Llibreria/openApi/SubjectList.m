@@ -19,6 +19,14 @@
     }
 }
 
+
+/**
+ * Get the subjects which the user that is using the application is enrolled in.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with the list of subjects the user is enrolled in.
+ */
 - (NSMutableArray *) getSubjects:(NSString *)token
 {
     self.subjects = [[NSMutableArray alloc] init];

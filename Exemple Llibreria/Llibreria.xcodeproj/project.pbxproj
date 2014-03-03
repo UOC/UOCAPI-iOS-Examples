@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE15A87A17466A6B00D1971F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AE15A87917466A6B00D1971F /* User.m */; };
 		AE15A87C17468B6D00D1971F /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = AE15A87B17468B6D00D1971F /* ico57.png */; };
 		AE15A87E17468B7100D1971F /* ico114.png in Resources */ = {isa = PBXBuildFile; fileRef = AE15A87D17468B7100D1971F /* ico114.png */; };
 		AE15A88417468BAB00D1971F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE15A88317468BAB00D1971F /* Default-568h@2x.png */; };
@@ -30,42 +29,41 @@
 		AE67935A1744C967001C8959 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = AE67934E1744C816001C8959 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE67935B1744C967001C8959 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6793501744C816001C8959 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE67935C1744C967001C8959 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6793521744C816001C8959 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DD1C33A417DDB1DB00B4554E /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33A317DDB1DB00B4554E /* Board.m */; };
-		DD1C33A717DDB41700B4554E /* Classroom.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33A617DDB41700B4554E /* Classroom.m */; };
-		DD1C33AA17DDB59100B4554E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33A917DDB59100B4554E /* Event.m */; };
-		DD1C33AD17DDB6CD00B4554E /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33AC17DDB6CD00B4554E /* Folder.m */; };
-		DD1C33B017DDB86700B4554E /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33AF17DDB86700B4554E /* Message.m */; };
-		DD1C33B317DDB88C00B4554E /* MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33B217DDB88C00B4554E /* MessageBody.m */; };
-		DD1C33B617DDB8A000B4554E /* MessageHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33B517DDB8A000B4554E /* MessageHistory.m */; };
-		DD1C33B917DDB8EE00B4554E /* MessageHistoryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33B817DDB8EE00B4554E /* MessageHistoryDetail.m */; };
-		DD1C33BC17DDB8FF00B4554E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33BB17DDB8FF00B4554E /* Person.m */; };
-		DD1C33BF17DDB90A00B4554E /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33BE17DDB90A00B4554E /* Profile.m */; };
-		DD1C33C217DDB91D00B4554E /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33C117DDB91D00B4554E /* Resource.m */; };
-		DD1C33C517DDB92D00B4554E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33C417DDB92C00B4554E /* Setting.m */; };
-		DD1C33C817DDB95700B4554E /* SettingValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33C717DDB95700B4554E /* SettingValue.m */; };
-		DD1C33CB17DDB96A00B4554E /* TeachingMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33CA17DDB96A00B4554E /* TeachingMaterial.m */; };
 		DD1C33CE17DDCDF800B4554E /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33CD17DDCDF800B4554E /* MessagesViewController.m */; };
 		DD1C33D117DDCE0900B4554E /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1C33D017DDCE0800B4554E /* HistoryViewController.m */; };
-		DD77DD9418B74105004732B7 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DD9318B74105004732B7 /* Subject.m */; };
-		DD77DD9718B74224004732B7 /* BoardList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DD9618B74224004732B7 /* BoardList.m */; };
-		DD77DD9A18B74528004732B7 /* ClassroomList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DD9918B74528004732B7 /* ClassroomList.m */; };
-		DD77DD9D18B74EF2004732B7 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DD9C18B74EF2004732B7 /* MessageList.m */; };
-		DD77DDA018B757AF004732B7 /* EventList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DD9F18B757AF004732B7 /* EventList.m */; };
-		DD77DDA318B75945004732B7 /* FolderList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDA218B75945004732B7 /* FolderList.m */; };
-		DD77DDA618B75BE7004732B7 /* PersonList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDA518B75BE7004732B7 /* PersonList.m */; };
-		DD77DDA918B75F0C004732B7 /* ProfileList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDA818B75F0C004732B7 /* ProfileList.m */; };
-		DD77DDAC18B76087004732B7 /* ResourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDAB18B76087004732B7 /* ResourceList.m */; };
-		DD77DDAF18B762A3004732B7 /* SettingList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDAE18B762A3004732B7 /* SettingList.m */; };
-		DD77DDB218B76471004732B7 /* SubjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB118B76471004732B7 /* SubjectList.m */; };
-		DD77DDB518B7656F004732B7 /* TeachingMaterialList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB418B7656F004732B7 /* TeachingMaterialList.m */; };
-		DD77DDB818B76701004732B7 /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDB718B76701004732B7 /* UserList.m */; };
+		DD5264AE18C0B93B00C7E6A5 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52648918C0B93B00C7E6A5 /* Board.m */; };
+		DD5264AF18C0B93B00C7E6A5 /* BoardList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52648B18C0B93B00C7E6A5 /* BoardList.m */; };
+		DD5264B018C0B93B00C7E6A5 /* Classroom.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52648D18C0B93B00C7E6A5 /* Classroom.m */; };
+		DD5264B118C0B93B00C7E6A5 /* ClassroomList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52648F18C0B93B00C7E6A5 /* ClassroomList.m */; };
+		DD5264B218C0B93B00C7E6A5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649118C0B93B00C7E6A5 /* Person.m */; };
+		DD5264B318C0B93B00C7E6A5 /* PersonList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649318C0B93B00C7E6A5 /* PersonList.m */; };
+		DD5264B418C0B93B00C7E6A5 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649518C0B93B00C7E6A5 /* Profile.m */; };
+		DD5264B518C0B93B00C7E6A5 /* ProfileList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649718C0B93B00C7E6A5 /* ProfileList.m */; };
+		DD5264B618C0B93B00C7E6A5 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649918C0B93B00C7E6A5 /* Resource.m */; };
+		DD5264B718C0B93B00C7E6A5 /* ResourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649B18C0B93B00C7E6A5 /* ResourceList.m */; };
+		DD5264B818C0B93B00C7E6A5 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649D18C0B93B00C7E6A5 /* Setting.m */; };
+		DD5264B918C0B93B00C7E6A5 /* SettingList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD52649F18C0B93B00C7E6A5 /* SettingList.m */; };
+		DD5264BA18C0B93B00C7E6A5 /* SettingValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264A118C0B93B00C7E6A5 /* SettingValue.m */; };
+		DD5264BB18C0B93B00C7E6A5 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264A318C0B93B00C7E6A5 /* Subject.m */; };
+		DD5264BC18C0B93B00C7E6A5 /* SubjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264A518C0B93B00C7E6A5 /* SubjectList.m */; };
+		DD5264BD18C0B93B00C7E6A5 /* TeachingMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264A718C0B93B00C7E6A5 /* TeachingMaterial.m */; };
+		DD5264BE18C0B93B00C7E6A5 /* TeachingMaterialList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264A918C0B93B00C7E6A5 /* TeachingMaterialList.m */; };
+		DD5264BF18C0B93B00C7E6A5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264AB18C0B93B00C7E6A5 /* User.m */; };
+		DD5264C018C0B93B00C7E6A5 /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264AD18C0B93B00C7E6A5 /* UserList.m */; };
+		DD5264CA18C0B9D100C7E6A5 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264C218C0B9D100C7E6A5 /* Event.m */; };
+		DD5264CB18C0B9D100C7E6A5 /* EventList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264C418C0B9D100C7E6A5 /* EventList.m */; };
+		DD5264CC18C0B9D100C7E6A5 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264C618C0B9D100C7E6A5 /* Folder.m */; };
+		DD5264CD18C0B9D100C7E6A5 /* FolderList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264C818C0B9D100C7E6A5 /* FolderList.m */; };
+		DD5264D718C0BA0300C7E6A5 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264CE18C0BA0300C7E6A5 /* Message.m */; };
+		DD5264D818C0BA0300C7E6A5 /* MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264D018C0BA0300C7E6A5 /* MessageBody.m */; };
+		DD5264D918C0BA0300C7E6A5 /* MessageHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264D218C0BA0300C7E6A5 /* MessageHistory.m */; };
+		DD5264DA18C0BA0300C7E6A5 /* MessageHistoryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264D418C0BA0300C7E6A5 /* MessageHistoryDetail.m */; };
+		DD5264DB18C0BA0300C7E6A5 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5264D618C0BA0300C7E6A5 /* MessageList.m */; };
 		DD77DDBB18B77723004732B7 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77DDBA18B77723004732B7 /* EventsViewController.m */; };
 		DDF40A8018BB3AA300985BC2 /* ExemplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF40A7F18BB3AA300985BC2 /* ExemplesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE15A87817466A6B00D1971F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		AE15A87917466A6B00D1971F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		AE15A87B17468B6D00D1971F /* ico57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico57.png; sourceTree = "<group>"; };
 		AE15A87D17468B7100D1971F /* ico114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico114.png; sourceTree = "<group>"; };
 		AE15A88317468BAB00D1971F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -99,64 +97,66 @@
 		AE6793551744C85A001C8959 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AE6793571744C86C001C8959 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AEE0EB6F1755F78600B1C138 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		DD1C33A217DDB1DB00B4554E /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		DD1C33A317DDB1DB00B4554E /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
-		DD1C33A517DDB41700B4554E /* Classroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classroom.h; sourceTree = "<group>"; };
-		DD1C33A617DDB41700B4554E /* Classroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classroom.m; sourceTree = "<group>"; };
-		DD1C33A817DDB59100B4554E /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		DD1C33A917DDB59100B4554E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		DD1C33AB17DDB6CD00B4554E /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
-		DD1C33AC17DDB6CD00B4554E /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
-		DD1C33AE17DDB86700B4554E /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		DD1C33AF17DDB86700B4554E /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		DD1C33B117DDB88C00B4554E /* MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBody.h; sourceTree = "<group>"; };
-		DD1C33B217DDB88C00B4554E /* MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageBody.m; sourceTree = "<group>"; };
-		DD1C33B417DDB8A000B4554E /* MessageHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHistory.h; sourceTree = "<group>"; };
-		DD1C33B517DDB8A000B4554E /* MessageHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHistory.m; sourceTree = "<group>"; };
-		DD1C33B717DDB8EE00B4554E /* MessageHistoryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHistoryDetail.h; sourceTree = "<group>"; };
-		DD1C33B817DDB8EE00B4554E /* MessageHistoryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHistoryDetail.m; sourceTree = "<group>"; };
-		DD1C33BA17DDB8FF00B4554E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		DD1C33BB17DDB8FF00B4554E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		DD1C33BD17DDB90A00B4554E /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
-		DD1C33BE17DDB90A00B4554E /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
-		DD1C33C017DDB91D00B4554E /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
-		DD1C33C117DDB91D00B4554E /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
-		DD1C33C317DDB92C00B4554E /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
-		DD1C33C417DDB92C00B4554E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
-		DD1C33C617DDB95700B4554E /* SettingValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingValue.h; sourceTree = "<group>"; };
-		DD1C33C717DDB95700B4554E /* SettingValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingValue.m; sourceTree = "<group>"; };
-		DD1C33C917DDB96A00B4554E /* TeachingMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachingMaterial.h; sourceTree = "<group>"; };
-		DD1C33CA17DDB96A00B4554E /* TeachingMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachingMaterial.m; sourceTree = "<group>"; };
 		DD1C33CC17DDCDF800B4554E /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		DD1C33CD17DDCDF800B4554E /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		DD1C33CF17DDCE0800B4554E /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		DD1C33D017DDCE0800B4554E /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
-		DD77DD9218B74105004732B7 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
-		DD77DD9318B74105004732B7 /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
-		DD77DD9518B74224004732B7 /* BoardList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardList.h; sourceTree = "<group>"; };
-		DD77DD9618B74224004732B7 /* BoardList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardList.m; sourceTree = "<group>"; };
-		DD77DD9818B74528004732B7 /* ClassroomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomList.h; sourceTree = "<group>"; };
-		DD77DD9918B74528004732B7 /* ClassroomList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomList.m; sourceTree = "<group>"; };
-		DD77DD9B18B74EF2004732B7 /* MessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageList.h; sourceTree = "<group>"; };
-		DD77DD9C18B74EF2004732B7 /* MessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageList.m; sourceTree = "<group>"; };
-		DD77DD9E18B757AF004732B7 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
-		DD77DD9F18B757AF004732B7 /* EventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventList.m; sourceTree = "<group>"; };
-		DD77DDA118B75945004732B7 /* FolderList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderList.h; sourceTree = "<group>"; };
-		DD77DDA218B75945004732B7 /* FolderList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderList.m; sourceTree = "<group>"; };
-		DD77DDA418B75BE7004732B7 /* PersonList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonList.h; sourceTree = "<group>"; };
-		DD77DDA518B75BE7004732B7 /* PersonList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonList.m; sourceTree = "<group>"; };
-		DD77DDA718B75F0C004732B7 /* ProfileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileList.h; sourceTree = "<group>"; };
-		DD77DDA818B75F0C004732B7 /* ProfileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileList.m; sourceTree = "<group>"; };
-		DD77DDAA18B76087004732B7 /* ResourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceList.h; sourceTree = "<group>"; };
-		DD77DDAB18B76087004732B7 /* ResourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceList.m; sourceTree = "<group>"; };
-		DD77DDAD18B762A3004732B7 /* SettingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingList.h; sourceTree = "<group>"; };
-		DD77DDAE18B762A3004732B7 /* SettingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingList.m; sourceTree = "<group>"; };
-		DD77DDB018B76471004732B7 /* SubjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectList.h; sourceTree = "<group>"; };
-		DD77DDB118B76471004732B7 /* SubjectList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectList.m; sourceTree = "<group>"; };
-		DD77DDB318B7656F004732B7 /* TeachingMaterialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachingMaterialList.h; sourceTree = "<group>"; };
-		DD77DDB418B7656F004732B7 /* TeachingMaterialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachingMaterialList.m; sourceTree = "<group>"; };
-		DD77DDB618B76701004732B7 /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
-		DD77DDB718B76701004732B7 /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
+		DD52648818C0B93B00C7E6A5 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		DD52648918C0B93B00C7E6A5 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		DD52648A18C0B93B00C7E6A5 /* BoardList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardList.h; sourceTree = "<group>"; };
+		DD52648B18C0B93B00C7E6A5 /* BoardList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardList.m; sourceTree = "<group>"; };
+		DD52648C18C0B93B00C7E6A5 /* Classroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classroom.h; sourceTree = "<group>"; };
+		DD52648D18C0B93B00C7E6A5 /* Classroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classroom.m; sourceTree = "<group>"; };
+		DD52648E18C0B93B00C7E6A5 /* ClassroomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomList.h; sourceTree = "<group>"; };
+		DD52648F18C0B93B00C7E6A5 /* ClassroomList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomList.m; sourceTree = "<group>"; };
+		DD52649018C0B93B00C7E6A5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DD52649118C0B93B00C7E6A5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DD52649218C0B93B00C7E6A5 /* PersonList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonList.h; sourceTree = "<group>"; };
+		DD52649318C0B93B00C7E6A5 /* PersonList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonList.m; sourceTree = "<group>"; };
+		DD52649418C0B93B00C7E6A5 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		DD52649518C0B93B00C7E6A5 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		DD52649618C0B93B00C7E6A5 /* ProfileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileList.h; sourceTree = "<group>"; };
+		DD52649718C0B93B00C7E6A5 /* ProfileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileList.m; sourceTree = "<group>"; };
+		DD52649818C0B93B00C7E6A5 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		DD52649918C0B93B00C7E6A5 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
+		DD52649A18C0B93B00C7E6A5 /* ResourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceList.h; sourceTree = "<group>"; };
+		DD52649B18C0B93B00C7E6A5 /* ResourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceList.m; sourceTree = "<group>"; };
+		DD52649C18C0B93B00C7E6A5 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		DD52649D18C0B93B00C7E6A5 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		DD52649E18C0B93B00C7E6A5 /* SettingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingList.h; sourceTree = "<group>"; };
+		DD52649F18C0B93B00C7E6A5 /* SettingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingList.m; sourceTree = "<group>"; };
+		DD5264A018C0B93B00C7E6A5 /* SettingValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingValue.h; sourceTree = "<group>"; };
+		DD5264A118C0B93B00C7E6A5 /* SettingValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingValue.m; sourceTree = "<group>"; };
+		DD5264A218C0B93B00C7E6A5 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		DD5264A318C0B93B00C7E6A5 /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		DD5264A418C0B93B00C7E6A5 /* SubjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectList.h; sourceTree = "<group>"; };
+		DD5264A518C0B93B00C7E6A5 /* SubjectList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectList.m; sourceTree = "<group>"; };
+		DD5264A618C0B93B00C7E6A5 /* TeachingMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachingMaterial.h; sourceTree = "<group>"; };
+		DD5264A718C0B93B00C7E6A5 /* TeachingMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachingMaterial.m; sourceTree = "<group>"; };
+		DD5264A818C0B93B00C7E6A5 /* TeachingMaterialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachingMaterialList.h; sourceTree = "<group>"; };
+		DD5264A918C0B93B00C7E6A5 /* TeachingMaterialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachingMaterialList.m; sourceTree = "<group>"; };
+		DD5264AA18C0B93B00C7E6A5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		DD5264AB18C0B93B00C7E6A5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		DD5264AC18C0B93B00C7E6A5 /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
+		DD5264AD18C0B93B00C7E6A5 /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
+		DD5264C118C0B9D100C7E6A5 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		DD5264C218C0B9D100C7E6A5 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		DD5264C318C0B9D100C7E6A5 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
+		DD5264C418C0B9D100C7E6A5 /* EventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventList.m; sourceTree = "<group>"; };
+		DD5264C518C0B9D100C7E6A5 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
+		DD5264C618C0B9D100C7E6A5 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		DD5264C718C0B9D100C7E6A5 /* FolderList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderList.h; sourceTree = "<group>"; };
+		DD5264C818C0B9D100C7E6A5 /* FolderList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderList.m; sourceTree = "<group>"; };
+		DD5264C918C0B9D100C7E6A5 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		DD5264CE18C0BA0300C7E6A5 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		DD5264CF18C0BA0300C7E6A5 /* MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBody.h; sourceTree = "<group>"; };
+		DD5264D018C0BA0300C7E6A5 /* MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageBody.m; sourceTree = "<group>"; };
+		DD5264D118C0BA0300C7E6A5 /* MessageHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHistory.h; sourceTree = "<group>"; };
+		DD5264D218C0BA0300C7E6A5 /* MessageHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHistory.m; sourceTree = "<group>"; };
+		DD5264D318C0BA0300C7E6A5 /* MessageHistoryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHistoryDetail.h; sourceTree = "<group>"; };
+		DD5264D418C0BA0300C7E6A5 /* MessageHistoryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHistoryDetail.m; sourceTree = "<group>"; };
+		DD5264D518C0BA0300C7E6A5 /* MessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageList.h; sourceTree = "<group>"; };
+		DD5264D618C0BA0300C7E6A5 /* MessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageList.m; sourceTree = "<group>"; };
 		DD77DDB918B77723004732B7 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		DD77DDBA18B77723004732B7 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		DDF40A7E18BB3AA300985BC2 /* ExemplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExemplesViewController.h; sourceTree = "<group>"; };
@@ -239,62 +239,62 @@
 				DDF40A7E18BB3AA300985BC2 /* ExemplesViewController.h */,
 				DDF40A7F18BB3AA300985BC2 /* ExemplesViewController.m */,
 				AEE0EB6F1755F78600B1C138 /* Constants.h */,
-				DD1C33A217DDB1DB00B4554E /* Board.h */,
-				DD1C33A317DDB1DB00B4554E /* Board.m */,
-				DD77DD9518B74224004732B7 /* BoardList.h */,
-				DD77DD9618B74224004732B7 /* BoardList.m */,
-				DD1C33A517DDB41700B4554E /* Classroom.h */,
-				DD1C33A617DDB41700B4554E /* Classroom.m */,
-				DD77DD9818B74528004732B7 /* ClassroomList.h */,
-				DD77DD9918B74528004732B7 /* ClassroomList.m */,
-				DD1C33A817DDB59100B4554E /* Event.h */,
-				DD1C33A917DDB59100B4554E /* Event.m */,
-				DD77DD9E18B757AF004732B7 /* EventList.h */,
-				DD77DD9F18B757AF004732B7 /* EventList.m */,
-				DD1C33AB17DDB6CD00B4554E /* Folder.h */,
-				DD1C33AC17DDB6CD00B4554E /* Folder.m */,
-				DD77DDA118B75945004732B7 /* FolderList.h */,
-				DD77DDA218B75945004732B7 /* FolderList.m */,
-				DD1C33AE17DDB86700B4554E /* Message.h */,
-				DD1C33AF17DDB86700B4554E /* Message.m */,
-				DD1C33B117DDB88C00B4554E /* MessageBody.h */,
-				DD1C33B217DDB88C00B4554E /* MessageBody.m */,
-				DD1C33B417DDB8A000B4554E /* MessageHistory.h */,
-				DD1C33B517DDB8A000B4554E /* MessageHistory.m */,
-				DD1C33B717DDB8EE00B4554E /* MessageHistoryDetail.h */,
-				DD1C33B817DDB8EE00B4554E /* MessageHistoryDetail.m */,
-				DD77DD9B18B74EF2004732B7 /* MessageList.h */,
-				DD77DD9C18B74EF2004732B7 /* MessageList.m */,
-				DD1C33BA17DDB8FF00B4554E /* Person.h */,
-				DD1C33BB17DDB8FF00B4554E /* Person.m */,
-				DD77DDA418B75BE7004732B7 /* PersonList.h */,
-				DD77DDA518B75BE7004732B7 /* PersonList.m */,
-				DD1C33BD17DDB90A00B4554E /* Profile.h */,
-				DD1C33BE17DDB90A00B4554E /* Profile.m */,
-				DD77DDA718B75F0C004732B7 /* ProfileList.h */,
-				DD77DDA818B75F0C004732B7 /* ProfileList.m */,
-				DD1C33C017DDB91D00B4554E /* Resource.h */,
-				DD1C33C117DDB91D00B4554E /* Resource.m */,
-				DD77DDAA18B76087004732B7 /* ResourceList.h */,
-				DD77DDAB18B76087004732B7 /* ResourceList.m */,
-				DD1C33C317DDB92C00B4554E /* Setting.h */,
-				DD1C33C417DDB92C00B4554E /* Setting.m */,
-				DD77DDAD18B762A3004732B7 /* SettingList.h */,
-				DD77DDAE18B762A3004732B7 /* SettingList.m */,
-				DD1C33C617DDB95700B4554E /* SettingValue.h */,
-				DD1C33C717DDB95700B4554E /* SettingValue.m */,
-				DD77DD9218B74105004732B7 /* Subject.h */,
-				DD77DD9318B74105004732B7 /* Subject.m */,
-				DD77DDB018B76471004732B7 /* SubjectList.h */,
-				DD77DDB118B76471004732B7 /* SubjectList.m */,
-				DD1C33C917DDB96A00B4554E /* TeachingMaterial.h */,
-				DD1C33CA17DDB96A00B4554E /* TeachingMaterial.m */,
-				DD77DDB318B7656F004732B7 /* TeachingMaterialList.h */,
-				DD77DDB418B7656F004732B7 /* TeachingMaterialList.m */,
-				AE15A87817466A6B00D1971F /* User.h */,
-				AE15A87917466A6B00D1971F /* User.m */,
-				DD77DDB618B76701004732B7 /* UserList.h */,
-				DD77DDB718B76701004732B7 /* UserList.m */,
+				DD52648818C0B93B00C7E6A5 /* Board.h */,
+				DD52648918C0B93B00C7E6A5 /* Board.m */,
+				DD52648A18C0B93B00C7E6A5 /* BoardList.h */,
+				DD52648B18C0B93B00C7E6A5 /* BoardList.m */,
+				DD52648C18C0B93B00C7E6A5 /* Classroom.h */,
+				DD52648D18C0B93B00C7E6A5 /* Classroom.m */,
+				DD52648E18C0B93B00C7E6A5 /* ClassroomList.h */,
+				DD52648F18C0B93B00C7E6A5 /* ClassroomList.m */,
+				DD5264C118C0B9D100C7E6A5 /* Event.h */,
+				DD5264C218C0B9D100C7E6A5 /* Event.m */,
+				DD5264C318C0B9D100C7E6A5 /* EventList.h */,
+				DD5264C418C0B9D100C7E6A5 /* EventList.m */,
+				DD5264C518C0B9D100C7E6A5 /* Folder.h */,
+				DD5264C618C0B9D100C7E6A5 /* Folder.m */,
+				DD5264C718C0B9D100C7E6A5 /* FolderList.h */,
+				DD5264C818C0B9D100C7E6A5 /* FolderList.m */,
+				DD5264C918C0B9D100C7E6A5 /* Message.h */,
+				DD5264CE18C0BA0300C7E6A5 /* Message.m */,
+				DD5264CF18C0BA0300C7E6A5 /* MessageBody.h */,
+				DD5264D018C0BA0300C7E6A5 /* MessageBody.m */,
+				DD5264D118C0BA0300C7E6A5 /* MessageHistory.h */,
+				DD5264D218C0BA0300C7E6A5 /* MessageHistory.m */,
+				DD5264D318C0BA0300C7E6A5 /* MessageHistoryDetail.h */,
+				DD5264D418C0BA0300C7E6A5 /* MessageHistoryDetail.m */,
+				DD5264D518C0BA0300C7E6A5 /* MessageList.h */,
+				DD5264D618C0BA0300C7E6A5 /* MessageList.m */,
+				DD52649018C0B93B00C7E6A5 /* Person.h */,
+				DD52649118C0B93B00C7E6A5 /* Person.m */,
+				DD52649218C0B93B00C7E6A5 /* PersonList.h */,
+				DD52649318C0B93B00C7E6A5 /* PersonList.m */,
+				DD52649418C0B93B00C7E6A5 /* Profile.h */,
+				DD52649518C0B93B00C7E6A5 /* Profile.m */,
+				DD52649618C0B93B00C7E6A5 /* ProfileList.h */,
+				DD52649718C0B93B00C7E6A5 /* ProfileList.m */,
+				DD52649818C0B93B00C7E6A5 /* Resource.h */,
+				DD52649918C0B93B00C7E6A5 /* Resource.m */,
+				DD52649A18C0B93B00C7E6A5 /* ResourceList.h */,
+				DD52649B18C0B93B00C7E6A5 /* ResourceList.m */,
+				DD52649C18C0B93B00C7E6A5 /* Setting.h */,
+				DD52649D18C0B93B00C7E6A5 /* Setting.m */,
+				DD52649E18C0B93B00C7E6A5 /* SettingList.h */,
+				DD52649F18C0B93B00C7E6A5 /* SettingList.m */,
+				DD5264A018C0B93B00C7E6A5 /* SettingValue.h */,
+				DD5264A118C0B93B00C7E6A5 /* SettingValue.m */,
+				DD5264A218C0B93B00C7E6A5 /* Subject.h */,
+				DD5264A318C0B93B00C7E6A5 /* Subject.m */,
+				DD5264A418C0B93B00C7E6A5 /* SubjectList.h */,
+				DD5264A518C0B93B00C7E6A5 /* SubjectList.m */,
+				DD5264A618C0B93B00C7E6A5 /* TeachingMaterial.h */,
+				DD5264A718C0B93B00C7E6A5 /* TeachingMaterial.m */,
+				DD5264A818C0B93B00C7E6A5 /* TeachingMaterialList.h */,
+				DD5264A918C0B93B00C7E6A5 /* TeachingMaterialList.m */,
+				DD5264AA18C0B93B00C7E6A5 /* User.h */,
+				DD5264AB18C0B93B00C7E6A5 /* User.m */,
+				DD5264AC18C0B93B00C7E6A5 /* UserList.h */,
+				DD5264AD18C0B93B00C7E6A5 /* UserList.m */,
 				AE67932F1744C7F8001C8959 /* Supporting Files */,
 			);
 			path = openApi;
@@ -400,46 +400,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5264C018C0B93B00C7E6A5 /* UserList.m in Sources */,
+				DD5264DB18C0BA0300C7E6A5 /* MessageList.m in Sources */,
 				AE6793591744C967001C8959 /* GTMHTTPFetcher.m in Sources */,
 				AE67935A1744C967001C8959 /* GTMOAuth2Authentication.m in Sources */,
+				DD5264B918C0B93B00C7E6A5 /* SettingList.m in Sources */,
+				DD5264CA18C0B9D100C7E6A5 /* Event.m in Sources */,
+				DD5264B418C0B93B00C7E6A5 /* Profile.m in Sources */,
 				AE67935B1744C967001C8959 /* GTMOAuth2SignIn.m in Sources */,
+				DD5264B018C0B93B00C7E6A5 /* Classroom.m in Sources */,
+				DD5264D818C0BA0300C7E6A5 /* MessageBody.m in Sources */,
+				DD5264B518C0B93B00C7E6A5 /* ProfileList.m in Sources */,
+				DD5264B218C0B93B00C7E6A5 /* Person.m in Sources */,
+				DD5264BE18C0B93B00C7E6A5 /* TeachingMaterialList.m in Sources */,
+				DD5264B718C0B93B00C7E6A5 /* ResourceList.m in Sources */,
 				AE67935C1744C967001C8959 /* GTMOAuth2ViewControllerTouch.m in Sources */,
 				DD77DDBB18B77723004732B7 /* EventsViewController.m in Sources */,
-				DD77DD9D18B74EF2004732B7 /* MessageList.m in Sources */,
 				AE6793351744C7F8001C8959 /* main.m in Sources */,
+				DD5264B318C0B93B00C7E6A5 /* PersonList.m in Sources */,
+				DD5264B818C0B93B00C7E6A5 /* Setting.m in Sources */,
+				DD5264AF18C0B93B00C7E6A5 /* BoardList.m in Sources */,
 				AE6793391744C7F8001C8959 /* AppDelegate.m in Sources */,
+				DD5264B118C0B93B00C7E6A5 /* ClassroomList.m in Sources */,
 				AE6793451744C7F8001C8959 /* ViewController.m in Sources */,
+				DD5264BB18C0B93B00C7E6A5 /* Subject.m in Sources */,
+				DD5264BF18C0B93B00C7E6A5 /* User.m in Sources */,
+				DD5264BD18C0B93B00C7E6A5 /* TeachingMaterial.m in Sources */,
 				AE47F29517455D8600370271 /* UserViewController.m in Sources */,
-				AE15A87A17466A6B00D1971F /* User.m in Sources */,
-				DD1C33A417DDB1DB00B4554E /* Board.m in Sources */,
-				DD77DDAC18B76087004732B7 /* ResourceList.m in Sources */,
-				DD77DDB518B7656F004732B7 /* TeachingMaterialList.m in Sources */,
-				DD1C33A717DDB41700B4554E /* Classroom.m in Sources */,
-				DD1C33AA17DDB59100B4554E /* Event.m in Sources */,
-				DD77DDAF18B762A3004732B7 /* SettingList.m in Sources */,
-				DD77DDB818B76701004732B7 /* UserList.m in Sources */,
-				DD1C33AD17DDB6CD00B4554E /* Folder.m in Sources */,
-				DD77DDB218B76471004732B7 /* SubjectList.m in Sources */,
-				DD77DDA318B75945004732B7 /* FolderList.m in Sources */,
-				DD1C33B017DDB86700B4554E /* Message.m in Sources */,
-				DD1C33B317DDB88C00B4554E /* MessageBody.m in Sources */,
-				DD77DDA018B757AF004732B7 /* EventList.m in Sources */,
-				DD1C33B617DDB8A000B4554E /* MessageHistory.m in Sources */,
-				DD1C33B917DDB8EE00B4554E /* MessageHistoryDetail.m in Sources */,
-				DD77DD9A18B74528004732B7 /* ClassroomList.m in Sources */,
-				DD77DD9718B74224004732B7 /* BoardList.m in Sources */,
-				DD1C33BC17DDB8FF00B4554E /* Person.m in Sources */,
-				DD77DD9418B74105004732B7 /* Subject.m in Sources */,
-				DD1C33BF17DDB90A00B4554E /* Profile.m in Sources */,
-				DD1C33C217DDB91D00B4554E /* Resource.m in Sources */,
-				DD77DDA618B75BE7004732B7 /* PersonList.m in Sources */,
-				DD1C33C517DDB92D00B4554E /* Setting.m in Sources */,
-				DD77DDA918B75F0C004732B7 /* ProfileList.m in Sources */,
-				DD1C33C817DDB95700B4554E /* SettingValue.m in Sources */,
-				DD1C33CB17DDB96A00B4554E /* TeachingMaterial.m in Sources */,
+				DD5264D718C0BA0300C7E6A5 /* Message.m in Sources */,
+				DD5264CC18C0B9D100C7E6A5 /* Folder.m in Sources */,
+				DD5264D918C0BA0300C7E6A5 /* MessageHistory.m in Sources */,
+				DD5264CB18C0B9D100C7E6A5 /* EventList.m in Sources */,
 				DDF40A8018BB3AA300985BC2 /* ExemplesViewController.m in Sources */,
 				DD1C33CE17DDCDF800B4554E /* MessagesViewController.m in Sources */,
 				DD1C33D117DDCE0900B4554E /* HistoryViewController.m in Sources */,
+				DD5264B618C0B93B00C7E6A5 /* Resource.m in Sources */,
+				DD5264AE18C0B93B00C7E6A5 /* Board.m in Sources */,
+				DD5264CD18C0B9D100C7E6A5 /* FolderList.m in Sources */,
+				DD5264BC18C0B93B00C7E6A5 /* SubjectList.m in Sources */,
+				DD5264DA18C0BA0300C7E6A5 /* MessageHistoryDetail.m in Sources */,
+				DD5264BA18C0B93B00C7E6A5 /* SettingValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

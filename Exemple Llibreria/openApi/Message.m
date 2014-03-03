@@ -25,7 +25,16 @@
 }
 
 
-
+/**
+ * Get message's metadata of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return Message object with the message's metadata.
+ */
 -(Message *) getClassroomIdBoardsIdMessagesId:(NSString *)idenC BoardId:(NSString *)idenB MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -47,6 +56,18 @@
     return m;
 }
 
+
+/**
+ * Get the message's metadata from a folder of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return Message object with the message's metadata.
+ */
 -(Message *) getClassroomIdBoardsIdFoldersIdMessagesId:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -68,6 +89,15 @@
     return m;
 }
 
+
+/**
+ * Get message's metadata.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return Message object with the message.
+ */
 -(Message *) getMailMessagesId:(NSString *)idenM withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -89,6 +119,17 @@
     return m;
 }
 
+
+/**
+ * Get message's metadata of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return Message object with the message's metadata.
+ */
 -(Message *) getSubjectsIdBoardsIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -110,6 +151,18 @@
     return m;
 }
 
+
+/**
+ * Get the message's metadata from a folder of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return Message object with the message's metadata.
+ */
 -(Message *) getSubjectsIdBoardsIdFoldersIdMessagesId:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -131,6 +184,17 @@
     return m;
 }
 
+
+/**
+ * Send a new mail message to a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant SEND_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param postMessage Message object with the data of the messagen to send (recipients, subject, etc).
+ * @param token the token obtained with the autentication
+ * @return Message object with the created message.
+ */
 -(Message *) postClassroomsIdBoardsIdMessages:(NSString *)idenC BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -166,6 +230,15 @@
     
 }
 
+
+/**
+ * Send a new mail message.
+ * The user must have given the application the grant SEND_MAIL to use these operation.
+ *
+ * @param postMessage Message object with the data of the messagen to send (recipients, subject, etc).
+ * @param token the token obtained with the autentication
+ * @return Message object with the created message.
+ */
 -(Message *) postMailMessages:(Message *)postMessage withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];
@@ -200,6 +273,17 @@
     return m;
 }
 
+
+/**
+ * Send a new mail message to a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant SEND_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param postMessage Message object with the data of the messagen to send (recipients, subject, etc).
+ * @param token the token obtained with the autentication
+ * @return Message object with the created message.
+ */
 -(Message *) postSubjectsIdBoardsIdMessages:(NSString *)idenS BoardId:(NSString *)idenB Message:(Message *)postMessage withToken:(NSString *)token
 {
     Message *m = [[Message alloc] init];

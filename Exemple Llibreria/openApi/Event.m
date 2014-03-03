@@ -31,6 +31,14 @@
     return dateFromString;
 }
 
+/**
+ * Get an event from the calendar. The event's date must be between the current date and 6 months earlier.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param iden Event identifier.
+ * @param token the token obtained with the autentication
+ * @return Event object with event's data or null if event can't be found.
+ */
 - (Event *) getCalendarEventsId:(NSString *)iden withToken:(NSString *)token{
     
     Event *e = [[Event alloc] init];
@@ -52,6 +60,15 @@
     return e;
 }
 
+
+/**
+ * Creates a new event.
+ * The user must have given the application the grant WRITE to use these operation.
+ *
+ * @param postEvent Event to create.
+ * @param token the token obtained with the autentication
+ * @return Event created.
+ */
 - (Event *) postCalendarEvents:(Event *)postEvent withToken:(NSString *)token
 {
     // Definim el format de data que vol el servidor

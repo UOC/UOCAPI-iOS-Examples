@@ -19,6 +19,13 @@
     }
 }
 
+/**
+ * Get the events of the calendar. If there isn't any parameter it return all the events of the current week.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array of Events with calendar's events.
+ */
 - (NSMutableArray *) getCalendarEvents:(NSString *)token
 {
     self.events = [[NSMutableArray alloc] init];

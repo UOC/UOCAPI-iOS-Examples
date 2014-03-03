@@ -19,6 +19,15 @@
     }
 }
 
+
+/**
+ * Get the resource's list of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasroom's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with the list of resources of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdResources:(NSString *)idenC withToken:(NSString *)token
 {
     self.resources = [[NSMutableArray alloc] init];
@@ -39,6 +48,15 @@
     return self.resources;
 }
 
+
+/**
+ * Get the resource's list of the subject.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenS Subject's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with the list of resources of the subject.
+ */
 - (NSMutableArray *) getSubjectsIdResources:(NSString *)idenS withToken:(NSString *)token
 {
     self.resources = [[NSMutableArray alloc] init];

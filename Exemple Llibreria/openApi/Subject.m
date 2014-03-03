@@ -21,6 +21,15 @@
     self.shortTitle = [subjectDictionary objectForKey:@"shortTitle"];
 }
 
+
+/**
+ * Get subject's data.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param iden Subject's identifier.
+ * @param token the token obtained with the autentication
+ * @return Subject object with subject's data.
+ */
 - (Subject *) getSubjectsId:(NSString *)iden withToken:(NSString *)token
 {
     Subject *s = [[Subject alloc] init];

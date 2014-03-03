@@ -22,6 +22,18 @@
     }
 }
 
+
+/**
+ * Get message's historic actions from a folder of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageHistory object with message's historic actions.
+ */
 -(MessageHistory *) getClassroomsIdBoardsIdFoldersIdMessagesIdHistory:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     MessageHistory *h = [[MessageHistory alloc] init];
@@ -40,6 +52,15 @@
     return h;
 }
 
+
+/**
+ * Get message's historic actions.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param idenM Message identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageHistory object with message's historic actions.
+ */
 -(MessageHistory *) getMailMessagesIdHistory:(NSString *)idenM withToken:(NSString *)token
 {
     MessageHistory *h = [[MessageHistory alloc] init];
@@ -59,6 +80,18 @@
 
 }
 
+
+/**
+ * Get message's historic actions from a folder of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageHistory object with message's historic actions.
+ */
 -(MessageHistory *) getSubjectsIdBoardsIdFoldersIdMessagesIdHistory:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     MessageHistory *h = [[MessageHistory alloc] init];

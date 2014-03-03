@@ -19,6 +19,16 @@
     }
 }
 
+
+/**
+ * Get the list of folders of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Classroom's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Folders with the list of folders of the communication's resource.
+ */
 - (NSMutableArray *) getClassroomsIdBoardsIdFolders:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.folders = [[NSMutableArray alloc] init];
@@ -39,6 +49,14 @@
     return self.folders;
 }
 
+
+/**
+ * Get the folder list of the user that is using the application.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array of Folders with user's folders.
+ */
 - (NSMutableArray *) getMailFolders:(NSString *)token
 {
     self.folders = [[NSMutableArray alloc] init];
@@ -60,6 +78,15 @@
 }
 
 
+/**
+ * Get the list of folders of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Folders with the list of folders of the communication's resource.
+ */
 - (NSMutableArray *) getSubjectsIdBoardsIdFolders:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.folders = [[NSMutableArray alloc] init];

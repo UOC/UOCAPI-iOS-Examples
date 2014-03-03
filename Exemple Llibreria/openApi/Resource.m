@@ -20,6 +20,16 @@
     self.domainId = [resourceDictionary objectForKey:@"domainId"];
 }
 
+
+/**
+ * Get the data of a resource of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasrooms's identifier
+ * @param idenR Resource's identifier.
+ * @param token the token obtained with the autentication
+ * @return Resource object with resource's data.
+ */
 -(Resource *) getClassroomsIdResourcesId:(NSString *)idenC ResourceId:(NSString *)idenR withToken:(NSString *)token
 {
     Resource *r = [[Resource alloc] init];
@@ -41,6 +51,16 @@
     return r;
 }
 
+
+/**
+ * Get the data of a resource of the subject.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenS Subject's identifier
+ * @param idenR Resource's identifier.
+ * @param token the token obtained with the autentication
+ * @return Resource object with resource's data.
+ */
 -(Resource *) getSubjectsIdResourcesId:(NSString *)idenS ResourceId:(NSString *)idenR withToken:(NSString *)token
 {
     Resource *r = [[Resource alloc] init];
@@ -63,6 +83,15 @@
 }
 
 
+/**
+ * Create a new resource inside the classroom. The user must be a lecturer of the classroom to be able to create the resource.
+ * The user must have given the application the grant WRITE to use these operation.
+ *
+ * @param idenC Clasrooms's identifier
+ * @param postResource Resource to create.
+ * @param token the token obtained with the autentication
+ * @return Created resource.
+ */
 -(Resource *) postClassroomsIdResources:(NSString *)idenC resource:(Resource *)postResource withToken:(NSString *)token
 {
     Resource *r = [[Resource alloc] init];
@@ -91,7 +120,7 @@
         return r;
     }
     
-    // Afegim els valors que ens ha tornat en un material que retornem.
+    // Afegim els valors que ens ha tornat en un recurs que retornem.
     [r setDatos:resouceDict];
     
     return r;

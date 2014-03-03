@@ -16,6 +16,18 @@
     self.body = [bodyDictionary objectForKey:@"body"];
 }
 
+
+/**
+ * Get body of a message from a folder of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Classroom's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageBody object with the body of the message.
+ */
 -(MessageBody *) getClassroomsIdBoardsIdFoldersIdMessagesIdBody:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     MessageBody *b = [[MessageBody alloc] init];
@@ -34,6 +46,15 @@
     return b;
 }
 
+
+/**
+ * Get the body of the message with id as identifier.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param idenM Message identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageBody object with the body of the message.
+ */
 -(MessageBody *) getMailMessagesIdBody:(NSString *)idenM withToken:(NSString *)token
 {
     MessageBody *b = [[MessageBody alloc] init];
@@ -53,6 +74,17 @@
 }
 
 
+/**
+ * Get body of a message from a folder of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param idenM Message's identifier.
+ * @param token the token obtained with the autentication
+ * @return MessageBody object with the body of the message.
+ */
 -(MessageBody *) getSubjectsIdBoardsIdFoldersIdMessagesIdBody:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF MessageId:(NSString *)idenM withToken:(NSString *)token
 {
     MessageBody *b = [[MessageBody alloc] init];

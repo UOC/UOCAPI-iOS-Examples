@@ -20,6 +20,14 @@
     }
 }
 
+/**
+ * Get the list of communication's resources (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Classroom's identifier
+ * @param token the token obtained with the autentication
+ * @return ArrayList of Boards with the list of communication's resources of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdBoards:(NSString *)idenC withToken:(NSString *)token
 {
     self.boards = [[NSMutableArray alloc] init];
@@ -40,6 +48,15 @@
     return self.boards;
 }
 
+
+/**
+ * Get the list of communication's resources (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenS Subject's identifier
+ * @param token the token obtained with the autentication
+ * @return ArrayList of Boards with the list of communication's resources of the subject.
+ */
 - (NSMutableArray *) getSubjectsIdBoards:(NSString *)idenS withToken:(NSString *)token
 {
     self.boards = [[NSMutableArray alloc] init];

@@ -21,6 +21,16 @@
     self.totalMessages = [boardDictionary objectForKey:@"totalMessages"];
 }
 
+
+/**
+ * Get the data of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasrooms's identifier
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Board object with the data of the communication's resource.
+ */
 - (Board *) getClassroomsIdBoardsId:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     Board *b = [[Board alloc] init];
@@ -42,6 +52,17 @@
     return b;
 }
 
+
+
+/**
+ * Get the data of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenS Subject's identifier
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Board object with the data of the communication's resource.
+ */
 - (Board *) getSubjectsIdBoardsId:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     Board *b = [[Board alloc] init];

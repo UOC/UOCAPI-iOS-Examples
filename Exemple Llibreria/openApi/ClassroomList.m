@@ -19,6 +19,13 @@
     }
 }
 
+/**
+ * Get the classrooms which the user that is using the application is enrolled in.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array of Classrooms with the list of classrooms the user is enrolled in.
+ */
 - (NSMutableArray *) getClassrooms:(NSString *)token
 {
     self.classrooms = [[NSMutableArray alloc] init];
@@ -39,6 +46,14 @@
     return self.classrooms;
 }
 
+/**
+ * Get all the workgroups of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasroom's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array of Classrooms with all the workgroups of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdGroups:(NSString *)idenC withToken:(NSString *)token
 {
     self.classrooms = [[NSMutableArray alloc] init];

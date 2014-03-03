@@ -19,6 +19,16 @@
     }
 }
 
+
+/**
+ * Get the list of messages of the Inbox folder of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the messages of the Inbox folder of the communication's resource.
+ */
 - (NSMutableArray *) getClassroomsIdBoardsIdMessages:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -39,6 +49,16 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of unread messages of the Inbox folder of a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the unread messages of the Inbox folder of the communication's resource.
+ */
 - (NSMutableArray *) getClassroomsIdBoardsIdMessagesUnread:(NSString *)idenC BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -59,6 +79,17 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of messages of a folder from a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the messages of the given folder of the communication's resource.
+ */
 - (NSMutableArray *) getClassroomsIdBoardsIdFoldersIdMessages:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -79,6 +110,17 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of unread messages of a folder from a communication's resource (board, debate, forum) of the classroom.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenC Clasrooms's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the messages of the given folder of the communication's resource.
+ */
 - (NSMutableArray *) getClassroomsIdBoardsIdFoldersIdMessagesUnread:(NSString *)idenC BoardId:(NSString *)idenB FolderId:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -99,6 +141,14 @@
     return self.messages;
 }
 
+
+/**
+ * Get the messages of folder Inbox.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with the messages of the Inbox folder.
+ */
 - (NSMutableArray *) getMailMessages:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -119,6 +169,14 @@
     return self.messages;
 }
 
+
+/**
+ * Get the unread messages of folder Inbox.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with the unread messages of the Inbox folder.
+ */
 - (NSMutableArray *) getMailMessagesUnread:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -139,6 +197,15 @@
     return self.messages;
 }
 
+
+/**
+ * Get the messages of folder id.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array with the messages of the given folder.
+ */
 - (NSMutableArray *) getMailFoldersIdMessages:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -159,6 +226,15 @@
     return self.messages;
 }
 
+
+/**
+ * Get the unread messages of folder id.
+ * The user must have given the application the grant READ_MAIL to use these operation.
+ *
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array with the unread messages of the given folder.
+ */
 - (NSMutableArray *) getMailFoldersIdMessagesUnread:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -179,6 +255,16 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of messages of the Inbox folder of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the messages of the Inbox folder of the communication's resource.
+ */
 - (NSMutableArray *) getSubjectsIdBoardsIdMessages:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -199,6 +285,16 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of unread messages of the Inbox folder of a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the unread messages of the Inbox folder of the communication's resource.
+ */
 - (NSMutableArray *) getSubjectsIdBoardsIdMessagesUnread:(NSString *)idenS BoardId:(NSString *)idenB withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -219,6 +315,17 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of messages of a folder from a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the messages of the given folder of the communication's resource.
+ */
 - (NSMutableArray *) getSubjectsIdBoardsIdFoldersIdMessages:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];
@@ -239,6 +346,17 @@
     return self.messages;
 }
 
+
+/**
+ * Get the list of unread messages of a folder from a communication's resource (board, debate, forum) of the subject.
+ * The user must have given the application the grant READ_BOARD to use these operation.
+ *
+ * @param idenS Subject's identifier.
+ * @param idenB Identifier of the communication's resource.
+ * @param idenF Folder's identifier.
+ * @param token the token obtained with the autentication
+ * @return Array of Messages with the unread messages of the given folder of the communication's resource.
+ */
 - (NSMutableArray *) getSubjectsIdBoardsIdFoldersIdMessagesUnread:(NSString *)idenS BoardId:(NSString *)idenB FolderId:(NSString *)idenF withToken:(NSString *)token
 {
     self.messages = [[NSMutableArray alloc] init];

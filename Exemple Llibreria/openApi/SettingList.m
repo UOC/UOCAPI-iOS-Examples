@@ -19,6 +19,14 @@
     }
 }
 
+
+/**
+ * Get the settings of the user that is using the application.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with the settings of the current user
+ */
 - (NSMutableArray *) getUserSettings:(NSString *)token
 {
     self.settings = [[NSMutableArray alloc] init];

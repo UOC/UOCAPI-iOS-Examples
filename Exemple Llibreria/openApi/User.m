@@ -21,12 +21,21 @@
     self.language    = [userDictionary objectForKey:@"language"];
     self.sessionID   = [userDictionary objectForKey:@"sessionId"];
     self.email       = [userDictionary objectForKey:@"email"];
+    self.photoUrl    = [userDictionary objectForKey:@"photoUrl"];
     
     NSURL *photoURL     = [NSURL URLWithString:[userDictionary objectForKey:@"photoUrl"]];
     NSData *photoData   = [NSData dataWithContentsOfURL:photoURL];
     self.photo          = [UIImage imageWithData:photoData];
 }
 
+
+/**
+ * Get personal data about the user (the user that is using the application).
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return User object with user's data.
+ */
 -(User *) getUser:(NSString *) token{
     User *u = [[User alloc] init];
     NSURL *userURL = [NSURL URLWithString:

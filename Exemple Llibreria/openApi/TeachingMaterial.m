@@ -18,6 +18,16 @@
     self.url = [materialDictionary objectForKey:@"url"];
 }
 
+
+/**
+ * Get a learning material from the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasrooms's identifier
+ * @param idenM Learning material's identifier.
+ * @param token the token obtained with the autentication
+ * @return TeachingMaterial object with the learning material or null if it doesn't exist.
+ */
 -(TeachingMaterial *) getClassroomsIdMaterialsId:(NSString *)idenC MaterialId:(NSString *)idenM withToken:(NSString *)token
 {
     TeachingMaterial *m = [[TeachingMaterial alloc] init];
@@ -40,6 +50,15 @@
 }
 
 
+/**
+ * Create a new learning material inside the classroom. The user must be a lecturer of the classroom to be able to create the learning material.
+ * The user must have given the application the grant WRITE to use these operation.
+ *
+ * @param idenC Clasrooms's identifier
+ * @param postMaterial Learning material to create.
+ * @param token the token obtained with the autentication
+ * @return Learning material newly created.
+ */
 -(TeachingMaterial *) postClassroomsIdMaterials:(NSString *)idenC material:(TeachingMaterial *)postMaterial withToken:(NSString *)token
 {
     TeachingMaterial *m = [[TeachingMaterial alloc] init];

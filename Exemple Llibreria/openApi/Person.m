@@ -38,6 +38,15 @@
     self.lastUpdate = [NSDate dateWithTimeIntervalSince1970:(([lastUpNum longLongValue]/ 1000)+7200)];
 }
 
+
+/**
+ * Get the public data of one person.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param iden Person identifier.
+ * @param token the token obtained with the autentication
+ * @return Person object with the person
+ */
 -(Person *) getPeopleId:(NSString *)iden withToken:(NSString *)token
 {
     Person *p = [[Person alloc] init];

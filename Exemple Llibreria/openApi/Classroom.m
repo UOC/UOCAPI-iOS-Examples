@@ -21,6 +21,14 @@
     self.shortTitle = [classroomDictionary objectForKey:@"shortTitle"];
 }
 
+/**
+ * Get classroom's data.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param iden Clasroom's identifier.
+ * @param token the token obtained with the autentication
+ * @return Classroom object with classrooms's data.
+ */
 - (Classroom *) getClassroomsId:(NSString *)iden withToken:(NSString *)token
 {
     Classroom *c = [[Classroom alloc] init];

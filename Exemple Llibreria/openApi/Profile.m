@@ -22,6 +22,15 @@
     self.language = [profileDictionary objectForKey:@"language"];
 }
 
+
+/**
+ * Get the current profile of the person
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param iden Person identifier.
+ * @param token the token obtained with the autentication
+ * @return Profile object with the current profile of the person.
+ */
 -(Profile *) getPeopleIdProfilesCurrent:(NSString *)iden withToken:(NSString *)token
 {
     Profile *p = [[Profile alloc] init];
@@ -43,6 +52,14 @@
     return p;
 }
 
+
+/**
+ * Get the current profile of the user that is using the application
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Profile object with the current profile of the user.
+ */
 -(Profile *) getUserProfilesCurrent:(NSString *)token
 {
     Profile *p = [[Profile alloc] init];
@@ -65,6 +82,14 @@
 }
 
 
+/**
+ * Update the ccurrent profile of the user that is using the application
+ * The user must have given the application the grant WRITE to use these operation.
+ *
+ * @param putProfile New profile.
+ * @param token the token obtained with the autentication
+ * @return Profile object with the current profile of the user.
+ */
 -(Profile *) putUserProfilesCurrent:(Profile *)putProfile withToken:(NSString *)token
 {
     //Agafem el perfil que se'ns ha passat i el posem en un diccionari

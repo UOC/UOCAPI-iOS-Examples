@@ -19,7 +19,9 @@
 @property (nonatomic, retain) NSString *language;//User's language in ISO format.
 @property (nonatomic, retain) NSString *sessionID;//Identifier of the user's current session inside Virtual Campus. It only contains data in the Get User's data call.
 @property (nonatomic, retain) NSString *email;//User's mail address
-@property (nonatomic, retain) UIImage *photo;
+@property (nonatomic, retain) NSString *photoUrl;//User's photo url
+
+@property (nonatomic, retain) UIImage *photo; // UIImage version of photoUrl
 
 - (void) setDatos:(NSDictionary *)userDictionary;
 -(User *) getUser:(NSString *) token;

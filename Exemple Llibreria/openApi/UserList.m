@@ -20,6 +20,14 @@
 }
 
 
+/**
+ * Get the list of members of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Classroom's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with the list of members of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdPeople:(NSString *)idenC withToken:(NSString *)token
 {
     self.users = [[NSMutableArray alloc] init];
@@ -40,6 +48,15 @@
     return self.users;
 }
 
+
+/**
+ * Get the list of students of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Classroom's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with all the students of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdPeopleStudents:(NSString *)idenC withToken:(NSString *)token
 {
     self.users = [[NSMutableArray alloc] init];
@@ -60,6 +77,15 @@
     return self.users;
 }
 
+
+/**
+ * Get the list of lecturers of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Classroom's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with all the lecturers of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdPeopleTeachers:(NSString *)idenC withToken:(NSString *)token
 {
     self.users = [[NSMutableArray alloc] init];
@@ -81,6 +107,14 @@
 }
 
 
+/**
+ * Get the tutors of the person.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenP Person's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with person's tutors.
+ */
 - (NSMutableArray *) getPeopleIdTutors:(NSString *)idenP withToken:(NSString *)token
 {
     self.users = [[NSMutableArray alloc] init];
@@ -101,6 +135,14 @@
     return self.users;
 }
 
+
+/**
+ * Get the tutors of the user that is using the application.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with user's tutors.
+ */
 - (NSMutableArray *) getUserTutors:(NSString *)token
 {
     self.users = [[NSMutableArray alloc] init];

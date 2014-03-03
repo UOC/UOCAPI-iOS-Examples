@@ -19,6 +19,15 @@
     }
 }
 
+
+/**
+ * Get the profiles of the person.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenP Person identifier.
+ * @param token the token obtained with the autentication
+ * @return Array with the profiles of the person.
+ */
 - (NSMutableArray *) getPeopleIdProfiles:(NSString *)idenP withToken:(NSString *)token
 {
     self.profiles = [[NSMutableArray alloc] init];
@@ -39,6 +48,14 @@
     return self.profiles;
 }
 
+
+/**
+ * Get the profiles of the user that is using the application.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param token the token obtained with the autentication
+ * @return Array with user's profiles.
+ */
 - (NSMutableArray *) getUserProfiles:(NSString *)token
 {
     self.profiles = [[NSMutableArray alloc] init];

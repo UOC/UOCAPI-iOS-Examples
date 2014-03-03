@@ -19,6 +19,15 @@
     }
 }
 
+
+/**
+ * Get the list of learning materials of the classroom.
+ * The user must have given the application the grant READ to use these operation.
+ *
+ * @param idenC Clasroom's identifier
+ * @param token the token obtained with the autentication
+ * @return Array with all the learning materias of the classroom.
+ */
 - (NSMutableArray *) getClassroomsIdMaterials:(NSString *)idenC withToken:(NSString *)token
 {
     self.materials = [[NSMutableArray alloc] init];
