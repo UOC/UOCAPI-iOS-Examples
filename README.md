@@ -10,3 +10,11 @@ There is exactly one example for every call to the API as well as one example of
 ## ToDo
 
 Update all UI to iOS 7 
+
+Delete or comment all Logs from the code
+
+## More Information
+
+You can find more information in our [blog][OpenApi]
+
+[OpenApi]: http://open-api.uoc.edu/documentacio/uoc-public-api/
