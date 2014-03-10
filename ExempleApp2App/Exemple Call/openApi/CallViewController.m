@@ -49,7 +49,12 @@
     NSURL *myURL = [NSURL URLWithString:urlString];
     // Comprovem que es pugui obrir l'aplicacio que volem.
     if ([[UIApplication sharedApplication] canOpenURL:myURL] == YES){
+        // crear una variable a stdDefaults que contingui el valor de l'adreca que volem accedir
+        // per si no tinguessim internet poder tenir la url sense accedir a internet
         [[UIApplication sharedApplication] openURL:myURL];
+    }
+    else {
+        // Obrir la store per baixar la app
     }
 }
 
@@ -65,6 +70,9 @@
     // Comprovem que es pugui obrir l'aplicacio que volem.
     if ([[UIApplication sharedApplication] canOpenURL:myURL] == YES){
         [[UIApplication sharedApplication] openURL:myURL];
+    }
+    else {
+        // Obrir la store per baixar la app  https://itunes.apple.com/app/idAPP
     }
 }
 
